@@ -8,7 +8,6 @@ export default function App() {
     <>
       {/* <div>test</div> */}
       <Layout title={"Home | Masjid Mu'awanah"} active={'Home'}>
-        <div>Homepage</div>
         <Hero />
       </Layout>
     </>

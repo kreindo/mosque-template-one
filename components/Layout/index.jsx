@@ -1,4 +1,5 @@
-import Header from '../Header';import Head from 'next/head';
+import Header from '../Header';
+import Head from 'next/head';
 import Footer from '../Footer';
 const Layout = (props) => {
   const { children, title, active } = props;
@@ -15,9 +16,11 @@ const Layout = (props) => {
           rel="stylesheet"
         />
       </Head>
-      <Header active={active}/>
-      {children}
-      <Footer />
+      <div className="lg:mx-[11%]">
+        <Header active={active} />
+        {children}
+        <Footer />
+      </div>
     </>
   );
 };

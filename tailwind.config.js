@@ -5,10 +5,12 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
-    colors: {
-      'warna-primary-maroon': '#B23256',
-      'warna-secondary-hijau': '#31AA75',
+    extend: {
+      colors: {
+        'warna-primary-maroon': '#B23256',
+        'warna-secondary-hijau': '#31AA75',
+        'warna-layouting': '#ededed',
+      },
     },
     fontFamily: {
       sans: ['Work Sans'],
