@@ -7,8 +7,12 @@ module.exports = {
   theme: {
     extend: {},
     colors: {
-      'warna-primary-maroon' : 
-    }
+      'warna-primary-maroon': '#B23256',
+      'warna-secondary-hijau': '#31AA75',
+    },
+    fontFamily: {
+      sans: ['Work Sans'],
+    },
   },
   plugins: [],
 };

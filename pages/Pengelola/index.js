@@ -3,7 +3,7 @@ import Layout from '../../components/Layout';
 
 const Index = () => {
   return (
-    <Layout>
+    <Layout title={"Pengelola | Masjid Mu'awanah"} active={'Pengelola'}>
       <div>Pengelola Page</div>
     </Layout>
   );
