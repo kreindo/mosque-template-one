@@ -7,9 +7,9 @@ export default function App() {
   return (
     <>
       {/* <div>test</div> */}
-      <Layout title={App}>
+      <Layout title={"Home | Masjid Mu'awanah"}>
+        <div>Homepage</div>
         <Hero />
-        <div>test</div>
       </Layout>
     </>
   );

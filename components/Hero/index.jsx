@@ -4,10 +4,8 @@ import Header from '../Header';
 export default function Hero() {
   return (
     <>
-      <div>
-        <Header>
-          <Image src={logoImage} alt="logo" />
-        </Header>
+      <div className=''>
+        
       </div>
     </>
   );
