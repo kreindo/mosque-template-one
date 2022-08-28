@@ -1,4 +1,5 @@
-import Header from '../Header';import Head from 'next/head';
+import Header from '../Header';
+import Head from 'next/head';
 import Footer from '../Footer';
 import Image from 'next/image';
 import Intersect from '../../src/assets/images/Intersect.svg';
@@ -26,7 +27,11 @@ const Layout = (props) => {
       <div className="mx-auto sm:max-w-screen-sm lg:max-w-screen-md xl:max-w-screen-lg">
         <Header active={active} />
         {children}
-        <Footer />
+      </div>
+      <div className="bg-warna-primary-maroon">
+        <div className="mx-auto sm:max-w-screen-sm lg:max-w-screen-md xl:max-w-screen-lg">
+          <Footer />
+        </div>
       </div>
     </>
   );
