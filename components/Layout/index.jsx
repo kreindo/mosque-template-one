@@ -1,5 +1,7 @@
 import Header from '../Header';import Head from 'next/head';
 import Footer from '../Footer';
+import Image from 'next/image';
+import Intersect from '../../src/assets/images/Intersect.svg';
 const Layout = (props) => {
   const { children, title, active } = props;
   return (
@@ -16,7 +18,12 @@ const Layout = (props) => {
           rel="stylesheet"
         />
       </Head>
-      <div className="lg:mx-[11%]">
+      <div className="relative mx-auto max-w-screen-2xl">
+        <div className="absolute top-0 right-0 z-[0]">
+          <Image src={Intersect} alt={'Intersect cube'} />
+        </div>
+      </div>
+      <div className="mx-auto sm:max-w-screen-sm lg:max-w-screen-md xl:max-w-screen-lg">
         <Header active={active} />
         {children}
         <Footer />

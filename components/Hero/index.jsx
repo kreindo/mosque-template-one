@@ -1,27 +1,26 @@
 import Image from 'next/image';import logoImage from '../../src/assets/images/logo.png';
 import Header from '../Header';
-import Intersect from '../../src/assets/images/Intersect.svg';
-import HeroTwoBlock from '../../src/assets/images/HeroTwoBlock.svg';
-import MosqueHeroImg from '../../src/assets/images/clipmosque.svg';
-import Mosque from '../../src/assets/images/mosque.png';
+// import HeroTwoBlock from '../../src/assets/images/HeroTwoBlock.svg';
+import MosqueHeroImg from '../../src/assets/images/imgHeroComplete.png';
+import Button from '../Button';
 export default function Hero() {
   return (
     <>
-      <div className="absolute top-0 right-0 z-[-1]">
-        <Image src={Intersect} alt={'Intersect cube'} />
-      </div>
       <div className="lg:mt-[100px] grid grid-cols-2 gap-[150px]">
         <div className="hidden lg:block">
-          <div>test</div>
           <Image src={MosqueHeroImg} alt={'Hero Mosque Image'} />
-          <Image src={HeroTwoBlock} alt={'Hero image'} />
+          {/* <Image src={HeroTwoBlock} alt={'Hero image'} /> */}
         </div>
-        <div className="flex flex-col w-[70%] justify-center">
+        <div className="flex flex-col w-[90%] justify-center">
           <h1 className="text-[24px] mb-[10px] leading-[56px] lg:text-[48px] font-extrabold">
-            Welcome to Masjid Amirul Mu’awanah Landing Page
+            Welcome to
+            <br />
+            Masjid Amirul Mu’awanah
+            <br />
+            Landing Page
           </h1>
           <div className="lg:w-[125px] h-[5px] bg-[black]"></div>
-          <p className="text-[13px] mt-[30px] lg:text-[14]">
+          <p className="font-medium text-[13px] mt-[30px] lg:text-[14]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa
             mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien
             fringilla, mattis ligula consectetur, ultrices mauris. Maecenas
@@ -29,6 +28,18 @@ export default function Hero() {
             ornare leo, non suscipit magna interdum eu. Curabitur pellentesque
             nibh nibh, at maximus ante fermentum sit amet
           </p>
+          <div className="flex items-center mt-[20px]">
+            <Button
+              className="mr-[22px] text-white font-semibold text-[15px] bg-black w-[149px] h-[42px] rounded-full hover:bg-warna-secondary-hijau border border-black transition-all"
+              name="Google Maps >"
+              link={'https://maps.google.com'}
+            />
+            <Button
+              className="font-bold text-[15px] text-black"
+              name="Contact Us"
+              link={'https://minecraft.net'}
+            />
+          </div>
         </div>
       </div>
     </>
