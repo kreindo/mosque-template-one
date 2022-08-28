@@ -6,13 +6,13 @@ import Button from '../Button';
 export default function Hero() {
   return (
     <>
-      <div className="lg:mt-[100px] grid grid-cols-2 gap-[150px]">
-        <div className="hidden lg:block">
+      <div className="grid-rows-2 lg:mt-[100px] grid grid-cols-2 gap-[150px]">
+        <div className="block">
           <Image src={MosqueHeroImg} alt={'Hero Mosque Image'} />
           {/* <Image src={HeroTwoBlock} alt={'Hero image'} /> */}
         </div>
-        <div className="flex flex-col w-[90%] justify-center">
-          <h1 className="text-[24px] mb-[10px] leading-[56px] lg:text-[48px] font-extrabold">
+        <div className="flex flex-col lg: w-[90%] justify-center">
+          <h1 className="font-extrabold md:text-[48px] mb-[10px] leading-[50px] xl:text-[24px] xl:leading-[100px]">
             Welcome to
             <br />
             Masjid Amirul Mu’awanah
