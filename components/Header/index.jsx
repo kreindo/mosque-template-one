@@ -1,4 +1,5 @@
-import logoImage from '../../src/assets/images/logoMosqueText.svg';import Image from 'next/image';
+import logoImage from '../../src/assets/images/logoMosqueText.svg';
+import Image from 'next/image';
 import Link from 'next/link';
 export default function Header(props) {
   const { active } = props;
@@ -15,22 +16,24 @@ export default function Header(props) {
         </Link>
       </div>
       <div>
-        <ul className="flex">
-          {menus.map((menu) => {
-            return (
-              <li
-                className={`z-10 hidden text-white lg:block ml-[63px] ${
-                  menu === active ? 'font-semibold' : ''
-                }`}
-                key={menu}
-              >
-                <Link href={`${menu == 'Home' ? '/' : `/${menu}`}`}>
-                  {menu}
-                </Link>
-              </li>
-            );
-          })}
-        </ul>
+        <nav>
+          <ul className="flex">
+            {menus.map((menu) => {
+              return (
+                <li
+                  className={`z-10 hidden text-white lg:block ml-[63px] ${
+                    menu === active ? 'font-semibold' : ''
+                  }`}
+                  key={menu}
+                >
+                  <Link href={`${menu == 'Home' ? '/' : `/${menu}`}`}>
+                    {menu}
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        </nav>
       </div>
     </div>
   );
