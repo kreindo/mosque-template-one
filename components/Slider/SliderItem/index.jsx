@@ -1,5 +1,4 @@
-import Image from 'next/image';
-import { useState, useEffect } from 'react';
+import Image from 'next/image';import { useState, useEffect } from 'react';
 const Index = (props) => {
   const { iteration } = props;
   const stringifyData = (data) => JSON.stringify(data);
@@ -30,7 +29,7 @@ const Index = (props) => {
 
   return (
     <div className=" w-[300px] h-[470px] bg-white">
-      <Image src={data.download_url} alt={data.id} />
+      {/* <Image src={data.download_url} alt={data.id} /> */}
       <div>test</div>
     </div>
   );
