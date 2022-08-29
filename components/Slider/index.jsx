@@ -1,7 +1,7 @@
 import SliderItem from './SliderItem';const Index = () => {
-  const arr = ['poster 1', 'poster 2'];
+  const arr = ['1', '2', '3', '4', '5'];
   return (
-    <div className="mt-[10em] flex">
+    <div className="mt-[10em] flex overflow-x-scroll">
       {arr.map((arrDat) => {
         return <SliderItem key={arrDat} iteration={arrDat.index} />;
       })}
