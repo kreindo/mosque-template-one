@@ -1,8 +1,8 @@
-import Image from 'next/image';import { useState, useEffect } from 'react';
+import Image from 'next/image';
+import { useState, useEffect } from 'react';
 const Index = (props) => {
   const { iteration } = props;
-  const stringifyData = (data) => JSON.stringify(data);
-  const initialData = stringifyData({ data: null });
+  const initialData = { data: null };
   const [data, setData] = useState(initialData);
 
   useEffect(() => {
@@ -14,23 +14,29 @@ const Index = (props) => {
         // .then((res) => {
         //   console.log(res[].url);
         // })
-        .then(() => {
-          const { id, download_url } = result[0];
-          const dataVal = stringifyData({
+        .then((res) => {
+          const { id, download_url } = res[2];
+          const dataVal = {
             id,
             download_url,
-          });
+          };
           setData(dataVal);
-          console.log(dataVal);
         });
     };
     fetchData();
+    console.log(data);
+    console.log(data.download_url);
   }, []);
 
   return (
-    <div className=" w-[300px] h-[470px] bg-white">
-      {/* <Image src={data.download_url} alt={data.id} /> */}
-      <div>test</div>
+    <div className="flex items-center w-[300px] h-[470px] rounded-[10px] mr-[20px] bg-white relative">
+      <Image
+        className="rounded-[10px]"
+        src={data.download_url}
+        alt={data.id}
+        layout={'fill'}
+        objectFit={'cover'}
+      />
     </div>
   );
 };

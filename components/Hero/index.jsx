@@ -1,4 +1,5 @@
-import Image from 'next/image';import logoImage from '../../src/assets/images/logo.png';
+import Image from 'next/image';
+import logoImage from '../../src/assets/images/logo.png';
 import Header from '../Header';
 // import HeroTwoBlock from '../../src/assets/images/HeroTwoBlock.svg';
 import MosqueHeroImg from '../../src/assets/images/imgHeroComplete.png';
@@ -6,13 +7,13 @@ import Button from '../Button';
 export default function Hero() {
   return (
     <>
-      <div className="grid-rows-2 lg:mt-[100px] grid grid-cols-2 gap-[150px]">
+      <div className="flex lg:mt-[100px] gap-[150px]">
         <div className="block">
           <Image src={MosqueHeroImg} alt={'Hero Mosque Image'} />
           {/* <Image src={HeroTwoBlock} alt={'Hero image'} /> */}
         </div>
-        <div className="flex flex-col lg: w-[90%] justify-center">
-          <h1 className="font-extrabold md:text-[48px] mb-[10px] leading-[50px] xl:text-[24px] xl:leading-[100px]">
+        <div className="flex flex-col lg: w-[50%] justify-center">
+          <h1 className="font-extrabold md:text-[48px] mb-[10px] leading-[50px] xl:text-[48px] xl:leading-[58px]">
             Welcome to
             <br />
             Masjid Amirul Mu’awanah
