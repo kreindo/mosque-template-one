@@ -15,7 +15,7 @@ const Index = (props) => {
         //   console.log(res[].url);
         // })
         .then((res) => {
-          const { id, download_url } = res[2];
+          const { id, download_url } = res[0];
           const dataVal = {
             id,
             download_url,
@@ -29,7 +29,7 @@ const Index = (props) => {
   }, []);
 
   return (
-    <div className="flex items-center w-[300px] h-[470px] rounded-[10px] mr-[20px] bg-white relative">
+    <div className="flex min-w-[300px] items-center w-[300px] h-[470px] rounded-[10px] mr-[20px] bg-white relative">
       <Image
         className="rounded-[10px]"
         src={data.download_url}
