@@ -2,7 +2,7 @@ import ImageBox from '../ImageBox';import Heading from '../Heading';
 const Index = (props) => {
   const { title, children, button } = props;
   return (
-    <div className="mt-12">
+    <div className="mt-[150px]">
       <Heading button={button} title={title}>
         {children}
       </Heading>
