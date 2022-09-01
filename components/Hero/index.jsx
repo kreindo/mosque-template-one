@@ -1,9 +1,6 @@
-import Image from 'next/image';import logoImage from '../../src/assets/images/logo.png';
-import Header from '../Header';
+import Image from 'next/image';
 import Heading from '../Heading';
-// import HeroTwoBlock from '../../src/assets/images/HeroTwoBlock.svg';
-import MosqueHeroImg from '../../src/assets/images/imgHeroComplete.png';
-import Button from '../Button';
+import MosqueHeroImg from '../../src/assets/images/imgHero5.png';
 export default function Hero() {
   return (
     <>

@@ -1,5 +1,4 @@
-import Image from 'next/image';
-import { useState, useEffect } from 'react';
+import Image from 'next/image';import { useState, useEffect } from 'react';
 const Index = (props) => {
   const { iteration } = props;
   const initialData = { data: null };
@@ -29,14 +28,16 @@ const Index = (props) => {
   }, []);
 
   return (
-    <div className="flex min-w-[300px] items-center w-[300px] h-[470px] rounded-[10px] mr-[20px] bg-white relative">
-      <Image
-        className="rounded-[10px]"
-        src={data.download_url}
-        alt={data.id}
-        layout={'fill'}
-        objectFit={'cover'}
-      />
+    <div className="">
+      <div className="flex min-w-[300px] items-center w-[300px] border-[10px] border-warna-secondary-hijau h-[470px] rounded-[10px] mr-[20px] bg-warna-secondary-hijau relative">
+        <Image
+          className="rounded-[5px]"
+          src={data.download_url}
+          alt={data.id}
+          layout={'fill'}
+          objectFit={'cover'}
+        />
+      </div>
     </div>
   );
 };
