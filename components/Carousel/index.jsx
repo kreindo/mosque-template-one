@@ -1,4 +1,5 @@
-import Image from 'next/image';import { CarouselData } from './carouselData';
+import Image from 'next/image';
+import { CarouselData } from './carouselData';
 import { useState } from 'react';
 
 const Index = ({ images }) => {
@@ -36,7 +37,7 @@ const Index = ({ images }) => {
       {CarouselData.map((img, index) => {
         return (
           <div
-            className="w-[700px] h-[1000px] flex flex-col shadow-lg relative"
+            className="w-[300px] h-[600px] flex justify-center items-center relative"
             key={`image index - ${index}`}
           >
             <Image

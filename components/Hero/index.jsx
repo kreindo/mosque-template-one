@@ -1,10 +1,9 @@
-import Image from 'next/image';
-import Heading from '../Heading';
+import Image from 'next/image';import Heading from '../Heading';
 import MosqueHeroImg from '../../src/assets/images/imgHero5.png';
 export default function Hero() {
   return (
     <>
-      <div className="flex lg:mt-[100px] gap-[150px]">
+      <div className="flex lg:mt-[50px] gap-[150px]">
         <div className="block">
           <Image src={MosqueHeroImg} alt={'Hero Mosque Image'} />
           {/* <Image src={HeroTwoBlock} alt={'Hero image'} /> */}
