@@ -1,5 +1,6 @@
 import Image from 'next/image';import { CarouselData } from './CarouselData';
 import { useState } from 'react';
+import { FaArrowCircleLeft, FaArrowCircleRight } from 'react-icons/fa';
 
 const Index = ({ images }) => {
   const [current, setCurrent] = useState(0);
@@ -18,40 +19,35 @@ const Index = ({ images }) => {
   }
 
   return (
-    <>
-      <div className="flex">
-        <button
-          onClick={nextSlide}
-          className="w-10 h-4 bg-warna-secondary-hijau hover:bg-white border border-warna-secondary-hijau"
-        >
-          next
-        </button>
-        <button
-          onClick={prevSlide}
-          className="w-10 h-4 bg-warna-secondary-hijau hover:bg-white border border-warna-secondary-hijau"
-        >
-          prev
-        </button>
-      </div>
-      {CarouselData.map((img, index) => {
-        return (
-          <div
-            className="w-[300px] h-[600px] flex justify-center items-center relative"
-            key={`image index - ${index}`}
-          >
+    <div className="flex justify-center items-center mt-[100px]">
+      <div className="w-[300px] h-[600px] flex flex-row justify-center items-center relative">
+        <div className="flex absolute z-10 h-full">
+          <button className="relative right-full" onClick={nextSlide}>
+            <FaArrowCircleLeft
+              className="fill-warna-secondary-hijau"
+              size={30}
+            />
+          </button>
+          <button className="relative left-full" onClick={prevSlide}>
+            <FaArrowCircleRight
+              className="fill-warna-secondary-hijau"
+              size={30}
+            />
+          </button>
+        </div>
+        {CarouselData.map((img, index) => {
+          return (
             <Image
-              // src={img.image}
+              key={`image index - ${index}`}
               src={`/${img.image}`}
               alt="mosque image"
-              // width={500}
-              // height={1000}
               layout="fill"
               objectFit="cover"
             />
-          </div>
-        );
-      })}
-    </>
+          );
+        })}
+      </div>
+    </div>
   );
 };
 
