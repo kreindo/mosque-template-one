@@ -1,5 +1,4 @@
-import Image from 'next/image';
-import { CarouselData } from './carouselData';
+import Image from 'next/image';import { CarouselData } from './CarouselData';
 import { useState } from 'react';
 
 const Index = ({ images }) => {
