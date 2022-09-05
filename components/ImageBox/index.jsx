@@ -31,16 +31,13 @@ const Index = ({ seed, msg, src, dummy }) => {
           onMouseLeave={detectMouseLeave}
         />
       </div>
-
-      {/* to work on, hover shows image description */
-      /* {hover === true ? (
-          <div className="">
-            <h3 className="">{msg}</h3>
-          </div>
-        ) : (
-          <div></div>
-        )}
-        */}
+      {hover === true ? (
+        <div className="">
+          <h3 className="">{msg}</h3>
+        </div>
+      ) : (
+        <div></div>
+      )}
     </>
   );
 };
