@@ -16,7 +16,7 @@ export default function App() {
         <div className="mt-[100px] text-center">X</div>
         <div className="w-full h-[20em] bg-warna-primary-maroon"></div>
         <div className="mt-[100px] text-center">X</div> */}
-        <Carousel images={CarouselData} />
+        {/* <Carousel images={CarouselData} /> */}
       </Layout>
     </>
   );
