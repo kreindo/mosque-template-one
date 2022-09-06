@@ -1,4 +1,5 @@
-import Image from 'next/image';import MosqueLogoSvg from '../../src/assets/images/logoMosqueText.svg';
+import Image from 'next/image';
+import MosqueLogoSvg from '../../src/assets/images/logoMosqueText.svg';
 import Link from 'next/link';
 export default function Header(props) {
   const { active } = props;

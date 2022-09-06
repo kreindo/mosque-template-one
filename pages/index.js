@@ -11,7 +11,7 @@ export default function App() {
     <>
       {/* <div>test</div> */}
       <Layout title={"Home | Masjid Mu'awanah"} active={'Home'}>
-        <Hero />
+        <Hero Masjid={"Masjid Mu'awanah"} />
         {/* <Slider className={''} />
         <div className="mt-[100px] text-center">X</div>
         <div className="w-full h-[20em] bg-warna-primary-maroon"></div>
