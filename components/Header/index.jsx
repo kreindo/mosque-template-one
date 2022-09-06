@@ -1,5 +1,4 @@
-import Image from 'next/image';
-import MosqueLogoSvg from '../../src/assets/images/logoMosqueText.svg';
+import Image from 'next/image';import MosqueLogoSvg from '../../src/assets/images/logoMosqueText.svg';
 import Link from 'next/link';
 export default function Header(props) {
   const { active } = props;
@@ -11,7 +10,7 @@ export default function Header(props) {
           <Image
             className="cursor-pointer brightness-0 hover:brightness-100 transition-all"
             src={MosqueLogoSvg}
-            alt="Logo here"
+            alt="Logo here!"
           />
         </Link>
       </div>
