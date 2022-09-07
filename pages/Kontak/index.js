@@ -1,4 +1,5 @@
-import Layout from '../../components/Layout';import {
+import Layout from '../../components/Layout';
+import {
   FaFacebookSquare,
   FaInstagramSquare,
   FaGoogle,
@@ -12,7 +13,7 @@ const Index = () => {
       <div className="flex items-center justify-between my-[150px]">
         <div className="flex flex-col justify-center">
           <h1 className="font-extrabold md:text-[48px] mb-[10px] leading-[50px] xl:text-[48px] xl:leading-[58px]">
-            Kontak Masjid Mu'awanah
+            Kontak Masjid Mu&apos;awanah
           </h1>
           <div className="lg:w-[125px] h-[5px] bg-[black]"></div>
         </div>
@@ -33,7 +34,7 @@ const Index = () => {
             </Link>
             <Link href={'/Kontak'}>
               <h1 className="cursor-pointer hover:text-warna-secondary-hijau transition-all">
-                masjid mu'awanah
+                masjid mu&apos;awanah
               </h1>
             </Link>
           </div>
@@ -43,7 +44,7 @@ const Index = () => {
             </Link>
             <Link href={'/Kontak'}>
               <h1 className="cursor-pointer hover:text-warna-secondary-hijau transition-all">
-                masjid mu'awanah
+                masjid mu&apos;awanah
               </h1>
             </Link>
           </div>
