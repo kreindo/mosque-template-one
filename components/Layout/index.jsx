@@ -1,5 +1,4 @@
-import Header from '../Header';
-import Head from 'next/head';
+import Header from '../Header';import Head from 'next/head';
 import Footer from '../Footer';
 import Image from 'next/image';
 import Intersect from '../../src/assets/images/Intersect.svg';
@@ -22,7 +21,7 @@ const Layout = (props) => {
           rel="stylesheet"
         />
       </Head>
-      <div className="relative my-auto mx-auto max-w-screen-2xl">
+      <div className="relative min-h-full mx-auto max-w-screen-2xl">
         <div className="hidden absolute lg:block right-[-700px] lg:top-0 lg:right-0 z-[0]">
           <Image src={Intersect} alt={'Intersect cube'} />
         </div>
