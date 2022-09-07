@@ -21,8 +21,8 @@ const Layout = (props) => {
           rel="stylesheet"
         />
       </Head>
-      <div className="relative mx-auto max-w-screen-2xl">
-        <div className="absolute right-[-700px] lg:top-0 lg:right-0 z-[0]">
+      <div className="relative min-h-full mx-auto max-w-screen-2xl">
+        <div className="hidden absolute lg:block right-[-700px] lg:top-0 lg:right-0 z-[0]">
           <Image src={Intersect} alt={'Intersect cube'} />
         </div>
         <div className="hidden absolute lg:block top-[150px] right-[300px] z-[0]">
@@ -32,7 +32,7 @@ const Layout = (props) => {
           <Image src={Swirl2} alt={'swirly svg'} />
         </div>
       </div>
-      <div className="mx-auto sm:max-w-screen-sm lg:max-w-screen-md xl:max-w-screen-lg">
+      <div className="mx-auto sm:max-w-screen-sm lg:max-w-screen-lg xl:max-w-screen-xl">
         <Header active={active} />
         {children}
       </div>
