@@ -1,5 +1,4 @@
-import Layout from '../../components/Layout';
-import {
+import Layout from '../../components/Layout';import {
   FaFacebookSquare,
   FaInstagramSquare,
   FaGoogle,
@@ -9,7 +8,7 @@ import Heading from '../../components/Heading';
 import Link from 'next/link';
 const Index = () => {
   return (
-    <Layout title={"Kontak | Masjid Mu'awanah"} active={'Kontak'}>
+    <Layout title={"Kontak | Masjid Al-Mu'awanah"} active={'Kontak'}>
       <div className="flex items-center justify-between my-[150px]">
         <div className="flex flex-col justify-center">
           <h1 className="font-extrabold md:text-[48px] mb-[10px] leading-[50px] xl:text-[48px] xl:leading-[58px]">
