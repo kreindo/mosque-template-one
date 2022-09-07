@@ -1,9 +1,8 @@
-import ImageBox from '../ImageBox';
-import Heading from '../Heading';
-import ImageDatas from '../Misc/ImageDatas';
+import ImageBox from '../ImageBox';import Heading from '../Heading';
+import { ImageDatas } from '../Misc/ImageDatas';
 const Index = (props) => {
-  const data = ImageDatas;
-  console.log({ data });
+  const datas = ImageDatas;
+  console.log({ datas });
   const { title, children, button } = props;
   return (
     <div className="mt-[150px]">
@@ -11,20 +10,31 @@ const Index = (props) => {
         {children}
       </Heading>
       <div className="mt-5 flex flex-wrap gap-3">
-        <ImageBox
-          dummy={true}
+        {datas.map((data, index) => {
+          return (
+            <ImageBox
+              dummy={false}
+              seed={'asd'}
+              src={data.image}
+              msg={'img'}
+              key={index}
+            />
+          );
+        })}
+        {/* <ImageBox
+          dummy={false}
           seed={'123'}
           src={data}
           msg={'tahfidz akhir pekan'}
         />
-        <ImageBox dummy={true} seed={'32a'} src={data} msg={'tahfidz'} />
-        <ImageBox dummy={true} seed={'dsa'} src={data} msg={'tahfidz'} />
-        <ImageBox dummy={true} seed={'23d'} src={data} msg={'tahfidz'} />
-        <ImageBox dummy={true} seed={'gfd'} src={data} msg={'tahfidz'} />
-        <ImageBox dummy={true} seed={'zxc'} src={data} msg={'tahfidz'} />
-        <ImageBox dummy={true} seed={'daw'} src={data} msg={'tahfidz'} />
-        <ImageBox dummy={true} seed={'cx2'} src={data} msg={'tahfidz'} />
-        <ImageBox dummy={true} seed={'fds'} src={data} msg={'tahfidz'} />
+        <ImageBox dummy={false} seed={'32a'} src={data} msg={'tahfidz'} />
+        <ImageBox dummy={false} seed={'dsa'} src={data} msg={'tahfidz'} />
+        <ImageBox dummy={false} seed={'23d'} src={data} msg={'tahfidz'} />
+        <ImageBox dummy={false} seed={'gfd'} src={data} msg={'tahfidz'} />
+        <ImageBox dummy={false} seed={'zxc'} src={data} msg={'tahfidz'} />
+        <ImageBox dummy={false} seed={'daw'} src={data} msg={'tahfidz'} />
+        <ImageBox dummy={false} seed={'cx2'} src={data} msg={'tahfidz'} />
+        <ImageBox dummy={false} seed={'fds'} src={data} msg={'tahfidz'} /> */}
       </div>
     </div>
   );
