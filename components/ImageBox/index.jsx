@@ -25,19 +25,19 @@ const Index = ({ seed, msg, src, dummy }) => {
               : `${`https://picsum.photos/seed/${seed}/200/200`}`
           }`}
           alt={'image1'}
-          width={200}
-          height={200}
+          layout={'fill'}
+          objectFit={'cover'}
           onMouseEnter={detectMouseHover}
           onMouseLeave={detectMouseLeave}
         />
       </div>
-      {hover === true ? (
+      {/* {hover === true ? (
         <div className="">
           <h3 className="">{msg}</h3>
         </div>
       ) : (
         <div></div>
-      )}
+      )} */}
     </>
   );
 };

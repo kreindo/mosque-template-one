@@ -1,4 +1,5 @@
-import Image from 'next/image';import logoImage from '../../src/assets/images/logoMosqueText.svg';
+import Image from 'next/image';
+import logoImage from '../../src/assets/images/logoMosqueText.svg';
 import Link from 'next/link';
 import { FaInstagram, FaFacebook, FaGoogle } from 'react-icons/fa';
 
@@ -8,7 +9,7 @@ const index = () => {
       <div className="flex gap-8 brightness-0 invert">
         <Image src={logoImage} alt={'Logo image'} />
       </div>
-      <div className="flex gap-[100px]">
+      {/* <div className="flex gap-[100px]">
         <div className="flex flex-col">
           <div className="text-white font-bold">Link</div>
           <div className="mr-10">
@@ -53,7 +54,7 @@ const index = () => {
             loading={'lazy'}
           ></iframe>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
