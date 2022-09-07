@@ -22,13 +22,13 @@ const Layout = (props) => {
         />
       </Head>
       <div className="relative mx-auto max-w-screen-2xl">
-        <div className="absolute top-0 right-0 z-[0]">
+        <div className="absolute right-[-700px] lg:top-0 lg:right-0 z-[0]">
           <Image src={Intersect} alt={'Intersect cube'} />
         </div>
-        <div className="absolute top-[150px] right-[300px] z-[0]">
+        <div className="hidden absolute lg:block top-[150px] right-[300px] z-[0]">
           <Image src={Swirl1} alt={'swirly svg'} />
         </div>
-        <div className="absolute top-[220px] right-[800px] z-[0]">
+        <div className="hidden absolute lg:block top-[220px] right-[800px] z-[0]">
           <Image src={Swirl2} alt={'swirly svg'} />
         </div>
       </div>
@@ -37,7 +37,7 @@ const Layout = (props) => {
         {children}
       </div>
       <div className="bg-warna-primary-maroon">
-        <div className="mx-auto sm:max-w-screen-sm lg:max-w-screen-md xl:max-w-screen-lg">
+        <div className="mt-[100px] mx-auto sm:max-w-screen-sm lg:max-w-screen-md xl:max-w-screen-lg">
           <Footer />
         </div>
       </div>
