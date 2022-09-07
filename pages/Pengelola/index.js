@@ -1,10 +1,9 @@
-import PageTemplate from '../../components/PageTemplate';
-import Layout from '../../components/Layout';
+import PageTemplate from '../../components/PageTemplate';import Layout from '../../components/Layout';
 
 const Index = () => {
   return (
-    <Layout title={"Pengelola | Masjid Mu'awanah"} active={'Pengelola'}>
-      <PageTemplate title={"Kepengurusan Masjid Mu'awanah"}>
+    <Layout title={"Pengelola | Masjid Al-Mu'awanah"} active={'Pengelola'}>
+      <PageTemplate title={"Kepengurusan Masjid Al-Mu'awanah"}>
         Daftar Kepengurusan Masjid Mu&apos;awanah Lorem ipsum dolor sit amet
         consectetur adipisicing elit. Necessitatibus, commodi. Lorem ipsum dolor
         sit amet. Lorem ipsum dolor sit amet consectetur, adipisicing elit.

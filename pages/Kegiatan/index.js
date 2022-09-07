@@ -2,13 +2,11 @@ import Layout from '../../components/Layout';import PageTemplate from '../../com
 
 const Index = () => {
   return (
-    <Layout title={"Kegiatan | Masjid Mu'awanah"} active={'Kegiatan'}>
-      <PageTemplate title={"Kegiatan Masjid Mu'awanah"}>
-        Daftar Kegiatan Masjid Mu&apos;awanah Lorem ipsum dolor sit amet
-        consectetur adipisicing elit. Necessitatibus, commodi. Lorem ipsum dolor
-        sit amet. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-        Unde, sit perspiciatis consequuntur cum fugit praesentium error facilis
-        deleniti illum quasi.
+    <Layout title={"Kegiatan | Masjid Al-Mu'awanah"} active={'Kegiatan'}>
+      <PageTemplate title={"Kegiatan Masjid Al-Mu'awanah"}>
+        Masjid Mu&apos;awanah memiliki beberapa kegiatan seperti ta&apos;lim,
+        dan Tahfidz memberikan akses mudah untuk jamaah agar belajar lebih
+        banyak tentang agama.
       </PageTemplate>
     </Layout>
   );
