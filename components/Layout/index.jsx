@@ -1,4 +1,5 @@
-import Header from '../Header';import Head from 'next/head';
+import Header from '../Header';
+import Head from 'next/head';
 import Footer from '../Footer';
 import Image from 'next/image';
 import Intersect from '../../src/assets/images/Intersect.svg';
@@ -32,7 +33,7 @@ const Layout = (props) => {
           <Image src={Swirl2} alt={'swirly svg'} />
         </div>
       </div>
-      <div className="mx-auto sm:max-w-screen-sm lg:max-w-screen-lg xl:max-w-screen-xl">
+      <div className="mx-auto sm:max-w-screen-sm lg:max-w-screen-md xl:max-w-screen-lg">
         <Header active={active} />
         {children}
       </div>
