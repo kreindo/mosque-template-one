@@ -1,5 +1,4 @@
-import Layout from '../../components/Layout';
-import {
+import Layout from '../../components/Layout';import {
   FaFacebookSquare,
   FaInstagramSquare,
   FaGoogle,
@@ -11,7 +10,7 @@ const Index = () => {
   return (
     <Layout title={"Kontak | Masjid Al-Mu'awanah"} active={'Kontak'}>
       <div className="flex flex-col lg:flex-row items-center justify-between my-[150px]">
-        <div className="flex flex-col justify-center">
+        <div className="flex flex-col w-[30%] justify-center">
           <h1 className="font-extrabold md:text-[48px] mb-[10px] leading-[50px] xl:text-[48px] xl:leading-[58px]">
             Kontak Masjid Mu&apos;awanah
           </h1>
