@@ -1,7 +1,6 @@
-import { data } from 'autoprefixer';import Image from 'next/image';
 import ImageBox from '../ImageBox';
 import { TalimImages } from '../Misc/TalimImages';
-export const KegiatanBox = ({ title, children, dummy, phldr }) => {
+export const KegiatanBox = ({ title, children, dummy }) => {
   const datas = TalimImages;
   return (
     <div className=" mb-[130px] relative">

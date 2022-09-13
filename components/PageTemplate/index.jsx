@@ -1,4 +1,5 @@
-import ImageBox from '../ImageBox';import Heading from '../Heading';
+import ImageBox from '../ImageBox';
+import Heading from '../Heading';
 import { ImageDatas } from '../Misc/ImageDatas';
 const Index = (props) => {
   const datas = ImageDatas;

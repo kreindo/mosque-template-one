@@ -1,24 +1,24 @@
-import { FaInstagram, FaFacebookSquare, FaWhatsapp } from 'react-icons/fa';import Image from 'next/image';
-export const PengelolaBox = () => {
+import { FaInstagram, FaFacebookSquare, FaWhatsapp } from 'react-icons/fa';
+import Image from 'next/image';
+export const PengelolaBox = ({ name, occupation, children }) => {
   return (
-    <>
-      <div className="flex flex-col items-center gap-8">
-        <div className="relative flex items-center gap-8">
-          <div className="overflow-hidden p-10 w-20 h-20 rounded-full">
-            <Image
-              src={'https://picsum.photos/seed/sasdeed/200/200'}
-              alt={'image'}
-              width={200}
-              height={200}
-            />
-          </div>
+    <div className="shadow-md shadow-black-10">
+      <div className="p-10 mt-[50px] flex flex-col items-center gap-10">
+        <div className="relative flex items-center gap-6">
+          <Image
+            className=" max-w-[50%] rounded-full"
+            src={'https://picsum.photos/id/237/400/400?grayscale'}
+            alt={'image'}
+            width={250}
+            height={250}
+          />
           <div className="flex flex-col">
-            <h1 className="text-2xl font-bold">Heading</h1>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Repellendus in veniam dolor reprehenderit itaque? Recusandae
-              delectus ducimus voluptatibus unde placeat!
-            </p>
+            <div className="flex flex-row items-center">
+              <h1 className="text-lg font-bold">{name}</h1>
+              <span className="mx-1 text-2xl">&bull;</span>
+              <h2 className="text-md text-gray-400">{occupation}</h2>
+            </div>
+            <p>{children}</p>
           </div>
         </div>
         <div className="flex items-end justify-between gap-[126px]">
@@ -27,6 +27,6 @@ export const PengelolaBox = () => {
           <FaWhatsapp size={30} />
         </div>
       </div>
-    </>
+    </div>
   );
 };

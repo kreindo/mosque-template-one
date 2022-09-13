@@ -1,5 +1,4 @@
-import PageTemplate from '../../../components/PageTemplate';
-import { KegiatanBox } from '../../../components/KegiatanBox';
+import PageTemplate from '../../../components/PageTemplate';import { KegiatanBox } from '../../../components/KegiatanBox';
 const Index = ({ id }) => {
   return (
     <div id={id}>
@@ -20,7 +19,7 @@ const Index = ({ id }) => {
         Masjid Menyiapkan kopi, teh, air minum gratis (seduh sendiri), layanan
         wifi gratis.
       </KegiatanBox>
-      <KegiatanBox title={'bantuan sosial'}>
+      <KegiatanBox title={'Bantuan sosial'}>
         Bantuan sosial kepada jamaah dan warga yang membutuhkan.
       </KegiatanBox>
       <KegiatanBox title={'Layanan Mobil Ambulance gratis'}>
