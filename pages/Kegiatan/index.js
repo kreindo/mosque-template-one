@@ -1,4 +1,5 @@
-import Layout from '../../components/Layout';import PageTemplate from '../../components/PageTemplate';
+import Layout from '../../components/Layout';
+import PageTemplate from '../../components/PageTemplate';
 import { KegiatanBox } from '../../components/KegiatanBox';
 const Index = () => {
   return (
@@ -25,14 +26,23 @@ const Index = () => {
           M.Pd. dan Ustadz Khaerul Ikhsan, S.TH.I yang kesemuanya dilanjutkan
           dengan sarapan bersama.
         </KegiatanBox>
-        <KegiatanBox title={'Kajian Rutin Ba’da Subuh'} dummy>
-          Setiap Hari Selasa Bersama Ustadz Muslim Bahar, S.Pd.I, M.Pd.
+        <KegiatanBox title={'Makan bersama'} dummy>
+          setiap malam Jumat yang dilanjutkan dengan pengajian rutin (Liqo)
+          bersama Komunitas Pejuang Subuh.
         </KegiatanBox>
-        <KegiatanBox title={'Kajian Rutin Ba’da Subuh'}>
-          Setiap Hari Selasa Bersama Ustadz Muslim Bahar, S.Pd.I, M.Pd.
+        <KegiatanBox title={'Program Jumat Berkah'}>
+          makan bersama setiap selesai Sholat Jumat dalam bentuk prasmanan
         </KegiatanBox>
-        <KegiatanBox title={'Kajian Rutin Ba’da Subuh'}>
-          Setiap Hari Selasa Bersama Ustadz Muslim Bahar, S.Pd.I, M.Pd.
+        <KegiatanBox title={'Sedia kopi, teh, air minum gratis'}>
+          Masjid Menyiapkan kopi, teh, air minum gratis (seduh sendiri), layanan
+          wifi gratis.
+        </KegiatanBox>
+        <KegiatanBox title={'bantuan sosial'}>
+          Bantuan sosial kepada jamaah dan warga yang membutuhkan.
+        </KegiatanBox>
+        <KegiatanBox title={'Layanan Mobil Ambulance gratis'}>
+          Masjid menyediakan layanan mobil ambulance gratis, dengan harapan
+          dapat membantu masyarakat di
         </KegiatanBox>
       </div>
     </Layout>

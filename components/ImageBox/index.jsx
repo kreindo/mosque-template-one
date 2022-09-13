@@ -19,18 +19,20 @@ const Index = ({ seed, msg, src, dummy }) => {
   return (
     <>
       <div className="w-[150px] h-[150px] relative">
-        <Image
-          src={`${
-            dummy == false
-              ? `${src}`
-              : `${`https://picsum.photos/seed/${seed}/200/200`}`
-          }`}
-          alt={'image1'}
-          layout={'fill'}
-          objectFit={'cover'}
-          onMouseEnter={detectMouseHover}
-          onMouseLeave={detectMouseLeave}
-        />
+        {dummy == false ? (
+          <Image
+            src={src}
+            alt={'image1'}
+            layout={'fill'}
+            objectFit={'cover'}
+            onMouseEnter={detectMouseHover}
+            onMouseLeave={detectMouseLeave}
+          />
+        ) : (
+          <div className="border-3 border-red bg-gray-300 w-[150px] h-[150px] flex items-center justify-center text-gray-400">
+            <p>no image</p>
+          </div>
+        )}
       </div>
       {/* {hover === true ? (
         <div className="">
