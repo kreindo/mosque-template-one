@@ -1,4 +1,5 @@
-import Image from 'next/image';import MosqueLogoSvg from '../../src/assets/images/logoMosqueText.svg';
+import Image from 'next/image';
+import MosqueLogoSvg from '../../src/assets/images/logoMosqueText.svg';
 import Link from 'next/link';
 export default function Header(props) {
   const { active } = props;
@@ -25,7 +26,7 @@ export default function Header(props) {
                   }`}
                   key={menu}
                 >
-                  <Link href={`${menu == 'Home' ? '/' : `/${menu}`}`}>
+                  <Link href={`${menu == 'Home' ? '#' : `#${menu}`}`}>
                     {menu}
                   </Link>
                 </li>

@@ -1,5 +1,4 @@
-import Layout from '../../components/Layout';
-import PageTemplate from '../../components/PageTemplate';
+import Layout from '../../components/Layout';import PageTemplate from '../../components/PageTemplate';
 import { KegiatanBox } from '../../components/KegiatanBox';
 const Index = () => {
   return (

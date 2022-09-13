@@ -1,5 +1,4 @@
-import { useState } from 'react';
-import Image from 'next/image';
+import { useState } from 'react';import Image from 'next/image';
 const Index = ({ seed, msg, src, dummy }) => {
   const [hover, setHover] = useState(false);
 
@@ -29,7 +28,7 @@ const Index = ({ seed, msg, src, dummy }) => {
             onMouseLeave={detectMouseLeave}
           />
         ) : (
-          <div className="border-3 border-red bg-gray-300 w-[150px] h-[150px] flex items-center justify-center text-gray-400">
+          <div className="bg-gray-300 w-[150px] h-[150px] flex items-center justify-center text-gray-400">
             <p>no image</p>
           </div>
         )}

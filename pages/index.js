@@ -1,20 +1,15 @@
 import Layout from '../components/Layout';import Hero from '../components/Hero';
-import Slider from '../components/Slider';
-import { CarouselData } from '../components/Carousel/CarouselData';
-import Carousel from '../components/Carousel';
+import Kegiatan from '../components/SPA/Kegiatan';
+import Pengelola from '../components/SPA/Pengelola';
+import Kontak from '../components/SPA/Kontak';
 
 export default function App() {
   return (
-    <>
-      {/* <div>test</div> */}
-      <Layout title={"Home | Masjid Al-Mu'awanah"} active={'Home'}>
-        <Hero Masjid={"Masjid Al-Mu'awanah"} />
-        {/* <Slider className={''} />
-        <div className="mt-[100px] text-center">X</div>
-        <div className="w-full h-[20em] bg-warna-primary-maroon"></div>
-        <div className="mt-[100px] text-center">X</div> */}
-        {/* <Carousel images={CarouselData} /> */}
-      </Layout>
-    </>
+    <Layout title={"Home | Masjid Al-Mu'awanah"} active={'Home'}>
+      <Hero Masjid={"Masjid Al-Mu'awanah"} />
+      <Kegiatan id={'Kegiatan'} />
+      <Pengelola id={'Pengelola'} />
+      <Kontak id={'Kontak'} />
+    </Layout>
   );
 }
