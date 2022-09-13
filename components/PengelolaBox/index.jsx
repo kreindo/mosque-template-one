@@ -1,12 +1,13 @@
-import { FaInstagram, FaFacebookSquare, FaWhatsapp } from 'react-icons/fa';import Image from 'next/image';
+import { FaInstagram, FaFacebookSquare, FaWhatsapp } from 'react-icons/fa';
+import Image from 'next/image';
 export const PengelolaBox = ({ name, occupation, children }) => {
   return (
-    <div className="shadow-md shadow-black-10">
-      <div className="border-2 border-blue-500 p-10 mt-[50px] flex flex-col justify-center items-center gap-10">
-        <div className="border-2 border-blue-500 flex flex-col items-center gap-6 sm:flex-row">
-          <div className="border-2 border-green-500 relative w-40 h-40 sm:h-[20rem]">
+    <div className="relative shadow-lg shadow-red-500 w-[800px] h-[200px] border-2 border-blue-500">
+      <div className="absolute mt-[50px] flex flex-col justify-center items-center gap-10 border-2 border-red-800">
+        <div className="border-2 border-cyan-500 flex flex-col items-center gap-2 sm:flex-row">
+          <div className="border-2 border-green-500 relative w-[300px] h-[300px] sm:h-[7rem]">
             <Image
-              className="rounded-full sm:rounded-none"
+              className="rounded-full"
               src={'https://picsum.photos/id/233/400/400?grayscale'}
               alt={'image'}
               layout={'fill'}
@@ -14,13 +15,12 @@ export const PengelolaBox = ({ name, occupation, children }) => {
             />
           </div>
           <div className="flex flex-col">
-            <div className="flex flex-col sm:flex-row items-center justify-center">
+            <div className="flex flex-col sm:flex-col items-center justify-center sm:items-start">
+              <h1 className="text-md text-gray-500">{occupation}</h1>
               <h1 className="text-lg font-bold">{name}</h1>
-              <span className="sm:block hidden mx-1 text-2xl">&bull;</span>
-              <h2 className="text-md text-gray-400">{occupation}</h2>
             </div>
             <div className="mb-10">
-              <p className="sm:text-center">{children}</p>
+              <p className="text-center sm:text-start">{children}</p>
             </div>
             <div className="flex justify-center items-center gap-10 sm:gap-[126px]">
               <FaFacebookSquare size={30} />

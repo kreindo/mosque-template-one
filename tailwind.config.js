@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       colors: {
         'warna-primary-maroon': '#B23256',
+        'warna-hitam': '#202020',
         'warna-secondary-hijau': '#31AA75',
         'warna-layouting': '#ededed',
       },
