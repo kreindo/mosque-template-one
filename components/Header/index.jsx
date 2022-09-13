@@ -9,7 +9,7 @@ export default function Header(props) {
       <div className="">
         <Link href={'/'}>
           <Image
-            className="cursor-pointer brightness-0 hover:brightness-100 transition-all"
+            className="cursor-pointer brightness-100 hover:brightness-125 transition-all"
             src={MosqueLogoSvg}
             alt="Logo here!"
           />

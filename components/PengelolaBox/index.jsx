@@ -1,30 +1,33 @@
-import { FaInstagram, FaFacebookSquare, FaWhatsapp } from 'react-icons/fa';
-import Image from 'next/image';
+import { FaInstagram, FaFacebookSquare, FaWhatsapp } from 'react-icons/fa';import Image from 'next/image';
 export const PengelolaBox = ({ name, occupation, children }) => {
   return (
     <div className="shadow-md shadow-black-10">
-      <div className="p-10 mt-[50px] flex flex-col items-center gap-10">
-        <div className="relative flex items-center gap-6">
-          <Image
-            className=" max-w-[50%] rounded-full"
-            src={'https://picsum.photos/id/237/400/400?grayscale'}
-            alt={'image'}
-            width={250}
-            height={250}
-          />
+      <div className="border-2 border-blue-500 p-10 mt-[50px] flex flex-col justify-center items-center gap-10">
+        <div className="border-2 border-blue-500 flex flex-col items-center gap-6 sm:flex-row">
+          <div className="border-2 border-green-500 relative w-40 h-40 sm:h-[20rem]">
+            <Image
+              className="rounded-full sm:rounded-none"
+              src={'https://picsum.photos/id/233/400/400?grayscale'}
+              alt={'image'}
+              layout={'fill'}
+              objectFit={'cover'}
+            />
+          </div>
           <div className="flex flex-col">
-            <div className="flex flex-row items-center">
+            <div className="flex flex-col sm:flex-row items-center justify-center">
               <h1 className="text-lg font-bold">{name}</h1>
-              <span className="mx-1 text-2xl">&bull;</span>
+              <span className="sm:block hidden mx-1 text-2xl">&bull;</span>
               <h2 className="text-md text-gray-400">{occupation}</h2>
             </div>
-            <p>{children}</p>
+            <div className="mb-10">
+              <p className="sm:text-center">{children}</p>
+            </div>
+            <div className="flex justify-center items-center gap-10 sm:gap-[126px]">
+              <FaFacebookSquare size={30} />
+              <FaInstagram size={30} />
+              <FaWhatsapp size={30} />
+            </div>
           </div>
-        </div>
-        <div className="flex items-end justify-between gap-[126px]">
-          <FaFacebookSquare size={30} />
-          <FaInstagram size={30} />
-          <FaWhatsapp size={30} />
         </div>
       </div>
     </div>

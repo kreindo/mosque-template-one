@@ -1,5 +1,4 @@
-import MapnContact from './MapnContact';
-const Index = (props) => {
+import MapnContact from './MapnContact';const Index = (props) => {
   const { className, children, withButton, title } = props;
   return (
     <div className={`flex flex-col lg:w-[70%] justify-center ${className}`}>
@@ -7,7 +6,7 @@ const Index = (props) => {
         {title}
       </h1>
       <div className="w-[125px] lg:w-[125px] h-[5px] bg-[black]"></div>
-      <p className="border-3 border-red-500 font-medium text-[13px] mt-[30px] lg:text-[14]">
+      <p className="border-2 border-red-500 font-medium text-[13px] mt-[30px] lg:text-[14]">
         {children}
       </p>
       {withButton ? <MapnContact /> : null}
