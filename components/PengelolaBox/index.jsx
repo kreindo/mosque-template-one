@@ -1,20 +1,19 @@
-import { FaInstagram, FaFacebookSquare, FaWhatsapp } from 'react-icons/fa';
-import Image from 'next/image';
+import { FaInstagram, FaFacebookSquare, FaWhatsapp } from 'react-icons/fa';import Image from 'next/image';
 export const PengelolaBox = ({ name, occupation, children }) => {
   return (
-    <div className="relative shadow-lg shadow-red-500 w-[800px] h-[200px] border-2 border-blue-500">
-      <div className="absolute mt-[50px] flex flex-col justify-center items-center gap-10 border-2 border-red-800">
-        <div className="border-2 border-cyan-500 flex flex-col items-center gap-2 sm:flex-row">
-          <div className="border-2 border-green-500 relative w-[300px] h-[300px] sm:h-[7rem]">
+    <div className="shadow-lg mt-[50px]  shadow-gray-400 m-auto w-[300px] sm:w-[700px]">
+      <div className="flex flex-col justify-center  gap-10">
+        <div className="pt-10 pr-10 pb-10 pl-10 sm:px-0 sm:py-0 flex flex-col items-center w-[300px] sm:flex-row sm:w-[700px]">
+          <div className="relative w-[200px] h-[200px] sm:max-w-[150px] sm:min-w-[150px] sm:h-[280px]">
             <Image
-              className="rounded-full"
+              className="rounded-full sm:rounded-none"
               src={'https://picsum.photos/id/233/400/400?grayscale'}
               alt={'image'}
               layout={'fill'}
               objectFit={'cover'}
             />
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col pt-5 sm:py-10 sm:px-5">
             <div className="flex flex-col sm:flex-col items-center justify-center sm:items-start">
               <h1 className="text-md text-gray-500">{occupation}</h1>
               <h1 className="text-lg font-bold">{name}</h1>

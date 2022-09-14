@@ -13,14 +13,14 @@ const Index = ({ id }) => {
         inilah yang menjadi motivasi bagi pengurus masjid Al-Muawanah
         Terang-Terang Bulukumba yang terus memanjakan jamaahnya dengan berbagai
         program dan fasilitas yang disiapkan.
-        <div className="border-2 border-yellow-500 grid grid-cols-1 sm:grid-cols-2 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-1 gap-10">
           <PengelolaBox name={'Drs.H.Najamuddin,M.Pd.I'} occupation={'Ketua'}>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro,
             fuga. Sapiente quia itaque suscipit iusto et maxime ipsa veniam,
             iure nemo magni assumenda repellendus atque praesentium est voluptas
             ut aperiam.
           </PengelolaBox>
-          {/* <PengelolaBox
+          <PengelolaBox
             name={'Drs.H.Muh.Djabir Beddu, M.Pd.I'}
             occupation={'Wakil Ketua'}
           >
@@ -35,7 +35,7 @@ const Index = ({ id }) => {
           <PengelolaBox name={'H.Darmawan Sonda, SE'} occupation={'Bendahara'}>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. At soluta
             qui dolores nemo autem? Impedit quos autem voluptas labore nihil?
-          </PengelolaBox> */}
+          </PengelolaBox>
         </div>
       </PageTemplate>
     </div>
