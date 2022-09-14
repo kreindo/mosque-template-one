@@ -1,8 +1,8 @@
-import ImageBox from '../ImageBox';import Heading from '../Heading';
+import ImageBox from '../ImageBox';
+import Heading from '../Heading';
 import { ImageDatas } from '../Misc/ImageDatas';
 const Index = (props) => {
   const datas = ImageDatas;
-  console.log({ datas });
   const { title, children, button, images } = props;
   return (
     <div className="mt-[150px]">

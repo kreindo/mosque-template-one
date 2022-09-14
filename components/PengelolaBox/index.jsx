@@ -1,5 +1,4 @@
-import {
-  FaInstagram,
+import {  FaInstagram,
   FaTwitter,
   FaFacebookSquare,
   FaWhatsapp,
