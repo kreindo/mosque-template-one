@@ -1,5 +1,4 @@
-import {
-  FaInstagram,
+import {  FaInstagram,
   FaTwitter,
   FaFacebookSquare,
   FaWhatsapp,
@@ -31,7 +30,7 @@ export const PengelolaBox = ({
               objectFit={'cover'}
             />
           </div>
-          <div className="border-2 border-red-500 flex flex-col sm:min-w-[550px] pt-5 sm:py-10 sm:px-10">
+          <div className="flex flex-col sm:min-w-[550px] pt-5 sm:py-10 sm:px-10">
             <div className="flex flex-col items-center justify-center sm:items-start">
               <h1 className="text-md text-gray-500">{occupation}</h1>
               <h1 className="text-lg font-bold">{name}</h1>
