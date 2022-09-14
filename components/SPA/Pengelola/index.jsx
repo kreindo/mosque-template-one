@@ -12,27 +12,35 @@ const Index = ({ id }) => {
         inilah yang menjadi motivasi bagi pengurus masjid Al-Muawanah
         Terang-Terang Bulukumba yang terus memanjakan jamaahnya dengan berbagai
         program dan fasilitas yang disiapkan.
-        <PengelolaBox name={'Drs.H.Najamuddin,M.Pd.I'} occupation={'Ketua'}>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, fuga.
-          Sapiente quia itaque suscipit iusto et maxime ipsa veniam, iure nemo
-          magni assumenda repellendus atque praesentium est voluptas ut aperiam.
-        </PengelolaBox>
-        <PengelolaBox
-          name={'Drs.H.Muh.Djabir Beddu, M.Pd.I'}
-          occupation={'Wakil Ketua'}
-        >
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis,
-          delectus asperiores. Consequuntur illo necessitatibus, hic molestias
-          molestiae rem est ut optio? Nihil, quidem.
-        </PengelolaBox>
-        <PengelolaBox name={'Drs.Mardianto,MM.Pd'} occupation={'Sekretaris'}>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. At soluta
-          qui dolores nemo autem? Impedit quos autem voluptas labore nihil?
-        </PengelolaBox>
-        <PengelolaBox name={'H.Darmawan Sonda, SE'} occupation={'Bendahara'}>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. At soluta
-          qui dolores nemo autem? Impedit quos autem voluptas labore nihil?
-        </PengelolaBox>
+        <div className="grid grid-cols-1 sm:grid-cols-1 gap-10">
+          <PengelolaBox
+            name={'Drs.H.Najamuddin,M.Pd.I'}
+            occupation={'Ketua'}
+            whatsapp
+            whatsappLink={'#'}
+          ></PengelolaBox>
+          <PengelolaBox
+            name={'Drs.H.Muh.Djabir Beddu, M.Pd.I'}
+            occupation={'Wakil Ketua'}
+            whatsapp
+            whatsappLink={'#'}
+            facebook
+            facebookLink={'#'}
+          ></PengelolaBox>
+          <PengelolaBox
+            name={'Drs.Mardianto,MM.Pd'}
+            occupation={'Sekretaris'}
+            twitter
+            twitterLink={'#'}
+          >
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. At soluta
+            qui dolores nemo autem? Impedit quos autem voluptas labore nihil?
+          </PengelolaBox>
+          <PengelolaBox name={'H.Darmawan Sonda, SE'} occupation={'Bendahara'}>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. At soluta
+            qui dolores nemo autem? Impedit quos autem voluptas labore nihil?
+          </PengelolaBox>
+        </div>
       </PageTemplate>
     </div>
   );
