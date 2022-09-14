@@ -1,4 +1,5 @@
-import {  FaFacebookSquare,
+import {
+  FaFacebookSquare,
   FaInstagramSquare,
   FaGoogle,
   FaWhatsappSquare,
@@ -28,20 +29,20 @@ const index = ({ id }) => {
           </Link>
         </div>
         <div className="flex items-center gap-5 text-black">
-          <Link href={'/Kontak'}>
+          <Link href={'#'}>
             <FaFacebookSquare />
           </Link>
-          <Link href={'/Kontak'}>
+          <Link href={'#'}>
             <h1 className="cursor-pointer hover:text-warna-secondary-hijau transition-all">
               masjid mu&apos;awanah
             </h1>
           </Link>
         </div>
         <div className="flex items-center gap-5 text-black">
-          <Link href={'/Kontak'}>
+          <Link href={'#'}>
             <FaInstagramSquare />
           </Link>
-          <Link href={'/Kontak'}>
+          <Link href={'#'}>
             <h1 className="cursor-pointer hover:text-warna-secondary-hijau transition-all">
               masjid mu&apos;awanah
             </h1>
