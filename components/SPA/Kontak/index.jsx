@@ -1,5 +1,4 @@
-import {
-  FaFacebookSquare,
+import {  FaFacebookSquare,
   FaInstagramSquare,
   FaGoogle,
   FaWhatsappSquare,
@@ -19,36 +18,34 @@ const index = ({ id }) => {
       </div>
       <div className="font-bold text-2xl flex flex-col gap-8">
         <div className="flex items-center gap-5 text-black">
-          <Link href={'/Kontak'}>
-            <FaWhatsappSquare />
-          </Link>
-          <Link href={'https://wa.me/+6281200985643'}>
+          <FaWhatsappSquare />
+          <a
+            target={'_blank'}
+            rel="noreferrer"
+            href={'https://wa.me/+6281200985643'}
+          >
             <h1 className="cursor-pointer hover:text-warna-secondary-hijau transition-all">
               +62812-0098-5643
             </h1>
-          </Link>
+          </a>
         </div>
         <div className="flex items-center gap-5 text-black">
-          <Link href={'#'}>
-            <FaFacebookSquare />
-          </Link>
-          <Link href={'#'}>
+          <FaFacebookSquare />
+          <a href={'#'}>
             <h1 className="cursor-pointer hover:text-warna-secondary-hijau transition-all">
               masjid mu&apos;awanah
             </h1>
-          </Link>
+          </a>
         </div>
         <div className="flex items-center gap-5 text-black">
-          <Link href={'#'}>
-            <FaInstagramSquare />
-          </Link>
-          <Link href={'#'}>
+          <FaInstagramSquare />
+          <a target={'_blank'} rel="noreferrer" href={'#'}>
             <h1 className="cursor-pointer hover:text-warna-secondary-hijau transition-all">
               masjid mu&apos;awanah
             </h1>
-          </Link>
+          </a>
         </div>
-        <div className="flex gap-5 items-center" href={'/Kontak'}>
+        <div className="flex gap-5 items-center" href={'#'}>
           <FaGoogle />
           <h1 className="cursor-pointer hover:text-warna-secondary-hijau transition-all">
             masjidmuawanah@gmail.com

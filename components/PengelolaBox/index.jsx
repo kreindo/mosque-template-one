@@ -1,4 +1,5 @@
-import {  FaInstagram,
+import {
+  FaInstagram,
   FaTwitter,
   FaFacebookSquare,
   FaWhatsapp,
@@ -40,7 +41,7 @@ export const PengelolaBox = ({
             <div className="mb-10">
               <p className="text-center sm:text-start">{children}</p>
             </div>
-            <div className="border-2 border-red-500 flex justify-around sm:justify-start items-center sm:gap-[48px]">
+            <div className="flex justify-around sm:justify-start items-center sm:gap-[48px]">
               {facebook == true ? (
                 <a href={facebookLink}>
                   <FaFacebookSquare size={24} />
