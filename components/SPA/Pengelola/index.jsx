@@ -1,4 +1,5 @@
-import PageTemplate from '../../../components/PageTemplate';import { PengelolaBox } from '../../PengelolaBox';
+import PageTemplate from '../../../components/PageTemplate';
+import { PengelolaBox } from '../../PengelolaBox';
 const Index = ({ id }) => {
   return (
     <div id={id}>
@@ -26,6 +27,10 @@ const Index = ({ id }) => {
             whatsappLink={'#'}
             facebook
             facebookLink={'#'}
+            instagram
+            instagramLink={'#'}
+            twitter
+            twitterLink={'#'}
           ></PengelolaBox>
           <PengelolaBox
             name={'Drs.Mardianto,MM.Pd'}

@@ -33,12 +33,14 @@ export const PengelolaBox = ({
           <div className="flex flex-col sm:min-w-[550px] pt-5 sm:py-10 sm:px-10">
             <div className="flex flex-col items-center justify-center sm:items-start">
               <h1 className="text-md text-gray-500">{occupation}</h1>
-              <h1 className="text-lg font-bold">{name}</h1>
+              <h1 className="text-center sm:text-start text-lg font-bold">
+                {name}
+              </h1>
             </div>
             <div className="mb-10">
               <p className="text-center sm:text-start">{children}</p>
             </div>
-            <div className="flex justify-start items-center gap-10 sm:gap-[126px]">
+            <div className="border-2 border-red-500 flex justify-around sm:justify-start items-center sm:gap-[48px]">
               {facebook == true ? (
                 <a href={facebookLink}>
                   <FaFacebookSquare size={24} />

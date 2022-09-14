@@ -1,5 +1,4 @@
-import {
-  FaFacebookSquare,
+import {  FaFacebookSquare,
   FaInstagramSquare,
   FaGoogle,
   FaWhatsappSquare,
@@ -22,7 +21,7 @@ const index = ({ id }) => {
           <Link href={'/Kontak'}>
             <FaWhatsappSquare />
           </Link>
-          <Link href={'/Kontak'}>
+          <Link href={'https://wa.me/+6281200985643'}>
             <h1 className="cursor-pointer hover:text-warna-secondary-hijau transition-all">
               +62812-0098-5643
             </h1>
