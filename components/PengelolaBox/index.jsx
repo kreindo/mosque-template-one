@@ -1,5 +1,23 @@
-import { FaInstagram, FaFacebookSquare, FaWhatsapp } from 'react-icons/fa';import Image from 'next/image';
-export const PengelolaBox = ({ name, occupation, children }) => {
+import {
+  FaInstagram,
+  FaTwitter,
+  FaFacebookSquare,
+  FaWhatsapp,
+} from 'react-icons/fa';
+import Image from 'next/image';
+export const PengelolaBox = ({
+  name,
+  occupation,
+  children,
+  facebook,
+  instagram,
+  twitter,
+  whatsapp,
+  facebookLink,
+  instagramLink,
+  twitterLink,
+  whatsappLink,
+}) => {
   return (
     <div className="shadow-lg mt-[50px]  shadow-gray-400 m-auto w-[300px] sm:w-[700px]">
       <div className="flex flex-col justify-center  gap-10">
@@ -13,18 +31,36 @@ export const PengelolaBox = ({ name, occupation, children }) => {
               objectFit={'cover'}
             />
           </div>
-          <div className="flex flex-col pt-5 sm:py-10 sm:px-5">
-            <div className="flex flex-col sm:flex-col items-center justify-center sm:items-start">
+          <div className="border-2 border-red-500 flex flex-col sm:min-w-[550px] pt-5 sm:py-10 sm:px-10">
+            <div className="flex flex-col items-center justify-center sm:items-start">
               <h1 className="text-md text-gray-500">{occupation}</h1>
               <h1 className="text-lg font-bold">{name}</h1>
             </div>
             <div className="mb-10">
               <p className="text-center sm:text-start">{children}</p>
             </div>
-            <div className="flex justify-center items-center gap-10 sm:gap-[126px]">
-              <FaFacebookSquare size={30} />
-              <FaInstagram size={30} />
-              <FaWhatsapp size={30} />
+            <div className="flex justify-start items-center gap-10 sm:gap-[126px]">
+              {facebook == true ? (
+                <a href={facebookLink}>
+                  <FaFacebookSquare size={24} />
+                </a>
+              ) : null}
+              {twitter == true ? (
+                <a href={twitterLink}>
+                  <FaTwitter size={24} />
+                </a>
+              ) : null}
+              {instagram == true ? (
+                <a href={instagramLink}>
+                  <FaInstagram size={24} />
+                </a>
+              ) : null}
+              {whatsapp == true ? (
+                <a href={whatsappLink}>
+                  <FaWhatsapp size={24} />
+                </a>
+              ) : null}
+              <a href=""></a>
             </div>
           </div>
         </div>
