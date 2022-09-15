@@ -1,4 +1,5 @@
-import Header from '../Header';import Head from 'next/head';
+import Header from '../Header';
+import Head from 'next/head';
 import Footer from '../Footer';
 import Image from 'next/image';
 import Intersect from '../../src/assets/images/Intersect.svg';
